@@ -11,7 +11,8 @@
     "watch": "tsc -w",
     "run:dev": "nodemon dist/index.js",
     "run:start": "node dist/index.js",
-    "lint": "eslint --ext .ts --ext .tsx .",
+    "lint2": "eslint --ext .ts --ext .tsx .",
+    "lint": "eslint ./src",
     "lint-warn": "eslint --ext .ts --ext .tsx . -c .eslintrc.warn.json",
     "prepare": "husky install",
     "lint:fix": "eslint ./src --fix --color"
