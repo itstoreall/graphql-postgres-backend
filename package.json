@@ -11,18 +11,17 @@
     "watch": "tsc -w",
     "run:dev": "nodemon dist/index.js",
     "run:start": "node dist/index.js",
-    "lint": "eslint --ext .ts --ext .tsx .",
-    "lint-warn": "eslint --ext .ts --ext .tsx . -c .eslintrc.warn.json",
+    "lint": "eslint --ext .ts .",
+    "lint-warn": "eslint --ext .ts . -c .eslintrc.warn.json",
     "prepare": "husky install"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.18.6",
     "@types/node": "^18.11.9",
-    "husky": "^8.0.0",
-    "lint-staged": "^13.0.4",
     "nodemon": "^2.0.20",
     "ts-node": "^10.9.1",
-    "typescript": "^4.9.3"
+    "typescript": "^4.9.3",
+    "husky": "^8.0.0"
   },
   "dependencies": {
     "@types/cors": "^2.8.12",
