@@ -5,7 +5,7 @@ branch="$(git rev-parse --abbrev-ref HEAD)"
 blackList="console.info\|console.log\|alert\|var_dump"
 result=0
 
-if [ "$branch" = "master" ]; then
+if [ "$branch" = "main" ]; then
   while read FILE; do
     if [[ -f $FILE ]]; then
         if [[ "$FILE" =~ ^.+(ts|tsx|html|js)$ ]]; then
